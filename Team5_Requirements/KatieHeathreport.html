@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset ="utf-8">
+    <link rel="stylesheet" href="report.css">
+</head>
+    <body>
+        <h2>Header Table</h2>
+        <table> <!--HEADER TABLE-->
+            <tr>
+              <th>Name</th>
+              <th>CWID</th>
+              <th>Email</th>
+              <th>Hours Contributed</th>
+            </tr>
+            <tr>
+              <td>Michael Orscheln</td>
+              <td>12065652</td>
+              <td>moorscheln@crimson.ua.edu</td>
+              <td>1</td>
+            </tr>
+            <tr>
+                <td>Josh Balch</td>
+                <td>12022874</td>
+                <td>jrbalch@crimson.ua.edu</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>Brodye Stevens</td>
+                <td>12142538</td>
+                <td>bdstevens2@crimson.ua.edu</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>Evan McCullar</td>
+                <td>12174843</td>
+                <td>emccullar@crimson.ua.edu</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Katie Heath</td>
+                <td>12039599</td>
+                <td>kmheath1@crimson.ua.edu</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Liam Kelly</td>
+                <td>12155995</td>
+                <td>lkelly3@crimson.ua.edu</td>
+                <td>3.5</td>
+              </tr>
+          </table>
+          
+          <h2>Task Distribution Table</h2>
+          <table> <!--Task Distribution Table-->
+            <tr>
+              <th>Name</th>
+              <th>Tasks</th>
+              <th>% Contributed</th>
+              
+            </tr>
+            <tr>
+              <td>Michael Orscheln</td>
+              <td>X</td>
+              <td>X</td>
+              
+            </tr>
+            <tr>
+                <td>Josh Balch</td>
+                <td>Member Validation Use Case and Diagram</td>
+                <td>10</td>
+                
+              </tr>
+              <tr>
+                <td>Brodye Stevens</td>
+                <td>Member Management, Provider Management, and Billing Procedure Use Case and Diagram; Total Use Case Diagram</td>
+                <td>20</td>
+                
+              </tr>
+              <tr>
+                <td>Evan McCullar</td>
+                <td>Glossary and Use case diagram</td>
+                <td>15</td>
+                
+              </tr>
+              <tr>
+                <td>Katie Heath</td>
+                <td>Short Paragraph</td>
+                <td>10</td>
+                
+              </tr>
+              <tr>
+                <td>Liam Kelly</td>
+                <td>Use case diagrams and descriptions</td>
+                <td>20</td>
+                
+              </tr>
+          </table>
+          <br>
+          <img src="Total Diagram.png" alt="bitbucket statistics table"/>
+
+          <h2>Glossary</h2>
+          <p>1. Member: Person who pays monthly fees for consultations and treatments with health care professionals, namely, dietitians, internists, and exercise experts.<br>
+            2. Provider: Health care professional that provides services to members.<br>
+            3. Member card: Plastic card embossed with the member’s name, nine-digit member number, and magnetic strip on which information is encoded.<br>
+            4. ChocAn Data Center: Computer/Group of Computers used to verify members, accounting procedures, and operations within ChocAn.<br>
+            5. Provider Directory: Alphabetically ordered list of service names and corresponding service codes and fees<br>
+            6. Manager: Given Summary reports and can request reports each week<br>
+            7. Report: <br>
+              a. Weekly email sent out to members that details the list of services provided to that member, sorted in order of service date.<br>
+              b. Weekly email sent out to providers containing the list of services he or she provided to ChocAn members.<br>
+            8. Summary Report: List that shows every provider to be paid that week, the number of consultations each had, his or her total fee for that week, the total number of providers who provided services, the total number of consultations, and the overall fee total are printed<br>
+            9. Interactive Mode: Mode in which operators use ChocAn Data Center to add, delete, and update members and providers<br>
+            10. Terminal: Interface for providers and operators to perform actions<br>
+            11. Record: An account of all things that happen either for a member or provider.<br>
+            12. Acme Account Services: Third-party service that is responsible for financial procedures. They also update the ChocAn data center with membership records every evening<br>
+            13. Operator: Person who can add members and providers, can also delete members and provides, and can update details for both<br>
+            14. Service code: Designated 6 digit code that is used to identify different services/sessions within the ChocAn system. Eg: 598470 is the service code for “session with dietician”.<br>
+            15. Electronics Funds Transfer: Process of moving money from one bank account to another using computer-based technology. </p>
+            <br>
+            <h2>Written Solution</h2>
+            <p>We are creating software for ChocAn, a company that specializes in helping Chocoholics (people addicted to chocolate) get support from  doctors, dietitians <br>
+            and exercise experts. The task of putting together a glossary was done by Evan McCuller. The following tasks presented to us were to identify the different use <br>
+            cases and draw ULM diagrams for each image. The next task was to write a Use Case Description of the use cases we had found and put them into the Report.html. <br>
+            How we broke this up was by all selecting one or more use cases, and doing both the diagram and description for the selected case. Brodye Stevens put together <br>
+            the description and diagram for Billing Service, Banking and Disk Recording  use cases, his diagram can be found under Billing Service.png. Evan McCullar, as well <br>
+            as doing the glossary, worked on the Interactive mode use case, the diagram for which can be found under EvanMcCullar (1).png.  Liam Kelly put together the <br>
+            Service Code Lookup diagram and description as well as the Manager Report.  Michael Orscheln did the use case diagram for Provider directory, which can be found <br>
+            under MichaelUseCaseDiagram.png.  Katie Heath worked on the Main Accounting Procedure and wrote the solution. Josh Balch was the submitter for the Report.html as well as<br>
+            put together the use case diagram and description for Member Validation. Which can be found under memberValidationUseCaseDiagram.png. </p>
+            <br>
+            <h2>Use Cases</h2>
+            <h3>Member Validation:</h3>
+            <p>Use Case: Member Validation<br>
+              Context: Checks membership through inputing nine-digit membership number into system, then dialing ChocAn Data Center, validating membership<br>
+              Actors: Provider<br>
+              Main Success Scenario:<br>
+              1.  Provider swipes member's card<br>
+                  1.1.    System reads nine-digit member number into a variable<br>
+              2.  System dials ChocAn Data Center<br>
+              3.  System displays the word "Validated"<br>
+              
+              Extensions:<br>
+              3a. If member is not validated, the system displays reason for invalidity<br>
+                  3b. If a member has not paid membership fees for at least a month, there member status will be set to suspended<br></p>
+            <h3>Billing Procedure:</h3>
+            <p>Use Case: Billing Procedure<br>
+              Context: A Provider uses this procedure to bill ChocAn for a service provided to a Member.<br>
+              Actors: Provider<br>
+              Main Success Scenario:<br>
+              1. Provider performs the Member Validation Use Case<br>
+              2. Provider enters the date of service in format (MM-DD-YYYY)<br>
+              3. Provider uses Provider Directory to look up the appropriate service code.<br>
+              4. Provider enters in service code<br>
+              5. ChocAn Software writes a record to disk, including the following: <br>
+                 Current date and time (MM-DD-YYYY HH:MM:SS), <br>
+                 Date service was provided (MM-DD-YYYY),<br>
+                 Provider number (9 digits)<br>
+                 Member number (9 digits)<br>
+                 Service code (6 digits)<br>
+                 Comments (100 characters) (optional)<br>
+              6. Software looks up and displays the fee to be paid for the service and displays it on the Provider's terminal<br>
+              7. Provider totals amount to be paid at end of week to verify ChocAn's total<br>
+              Extensions:<br>
+              4.a If Provider has entered a nonexistent code, an error message is displayed on their terminal<br>
+              4.b If code is accepted, Provider may also enter comments about the service provided<br></p>
+            <h3>Manager Request Accounting Procedure:</h3>
+            <p>Use Case: Main Accounting Report<br>
+
+              Context: Clock automatically creates a report outlining what payments must be made weekly every Friday at midnight<br>
+              
+              
+              
+              Actors: Clock<br>
+              Main Success Scenario:<br>
+              1. Clock creates report<br>
+              
+              2. Providers owed are listed<br>
+                2.1. No. of consultations<br>
+                2.2. Total Fee for provider<br>
+                
+              3 Totals calculated<br>
+                3.1. Total no. of providers calculated<br>
+                3.2. Total no. of consultations calculated<br>
+                3.3. Total Fee calculated<br>
+                
+              4. Report is printed<br>
+              
+              
+            </p>
+            <h3>Member Management:</h3>
+            <p>Use case: Member Management<br>
+              Context: A ChocAn operator uses this procedure to change Member records in the ChocAn Data Center <br>
+              Actors: Operator<br>
+              Main Success Scenario: <br>
+              1. ChocAn Operator accesses the ChocAn Data Center<br>
+              2. Operator selects Member record<br>
+              3. Operator changes record<br>
+              Extensions: <br>
+              3a. Operator adds a new Member record<br>
+              3b. Operator updates a current Member record<br>
+              3c. Operator deletes a current Member record<br>
+              </p>
+              
+              
+
+            <h3>Provider Management:</h3>
+              <p>Use case: Provider Management<br>
+              Context: A ChocAn operator uses this procedure to change Provider records in the ChocAn Data Center <br>
+              Actors: Operator<br>
+              Main Success Scenario: <br>
+              1. ChocAn Operator accesses the ChocAn Data Center<br>
+              2. Operator selects Provider record<br>
+              3. Operator changes record<br>
+              Extensions: <br>
+              3a. Operator adds a new Provider record<br>
+              3b. Operator updates a current Provider record<br>
+              3c. Operator deletes a current Provider record<br>
+              </p>
+            <h3>Request Provider Directory</h3>
+            <p>Use Case: Request Provider Directory<br>
+
+              Context: A provider can request a directory of services and their codes and fees<br>
+              
+              Actors: Provider<br>
+              
+              Main Success Scenario:<br>
+              1. Provider requests Provider Directory<br>
+              
+              2. List of Services is provided<br>
+                2.1 Code for each service given<br>
+                2.2 Fee for each service given<br>
+                
+              </p>
+
+    </body>
+</html>

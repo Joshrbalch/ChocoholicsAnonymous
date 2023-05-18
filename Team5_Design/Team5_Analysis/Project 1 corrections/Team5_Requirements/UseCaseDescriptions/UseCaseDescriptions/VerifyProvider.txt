@@ -1,0 +1,10 @@
+Use Case: Verify Provider
+Context: A Provider trying to log in to the ChocAn System
+Actors: Provider
+Main Success Scenario:
+    1.The Provider enters their username and password
+    2. System directs user to the provider terminal
+    3. System returns to provider menu
+Extensions:
+    1.1.	If they have an invalid username/password combination
+        1.1a. Repeat step one

@@ -1,0 +1,31 @@
+USE CASES:
+ Actors:
+    Provider
+        (A) Member Validation 
+        (B) Billing Procedure — includes (A) Member Validation 
+        (F) Weekly Accounting Procedure
+        (C) Manager Request Accounting Procedure (Report)
+    Operator
+        (D) Member Management
+        (E) Provider Management
+    Timer
+        (F) Weekly Accounting Procedure
+    Manager
+        (C) Manager Request Accounting Procedure (Report)
+        (F) Weekly Accounting Procedure
+
+
+Use Cases:
+(A) Member Validation [Josh]
+(B) Billing Procedure [Liam]
+    — includes (A) Member Validation 
+(C) Manager Request Accounting Procedure (Report) [Liam]
+(D) Member Management [Brodye]
+    -extends add
+    -extends update
+    -extends delete
+(E) Provider Management [Brodye]
+    -extends add
+    -extends update
+    -extends delete
+(F) Weekly Accounting Procedure [Liam]

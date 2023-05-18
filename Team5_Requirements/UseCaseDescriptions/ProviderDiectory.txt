@@ -1,0 +1,10 @@
+Use Case: Requesting a Provider Directory
+Context: If the provider needs the directory, they can request it
+Actors: Provider
+Main Success Scenario:
+	1.	Provider requests a provider directory
+	2.	System sends the Provider an alphabetically ordered list of service names, corresponding service codes and fees as an email attachment.
+	3.	System returns to provider menu
+Extensions:
+Not applicable
+

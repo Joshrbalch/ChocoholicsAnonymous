@@ -1,0 +1,45 @@
+Use Case:  Generate/Request Reports
+Context:  The manager generates/requests reports outlining the visits for both provider and members
+Actors:  Manager
+Main Success Scenario:
+	1.	The Manager requests a report
+	2.	Report is printed
+	3.	Return to manager menu
+Extensions:
+	3.1.	Manager requests a provider report for any provider who billed ChocAn that week. The report Includes  
+		Provider name (25 characters)
+		Provider number (9 digits)
+		Provider street address (25 characters)
+		Provider city (14 characters)
+		Provider state (2 letters)
+		Provider ZIP code (5 digits)
+		For each service provided, the following details are required: 
+		Date of service (MM–DD–YYYY)
+		Date and time data were received by the computer (MM–DD–YYYY HH:MM:SS)
+		Member name (25 characters)
+		Member number (9 digits)
+		Service code (6 digits)
+		Fee to be paid (up to $999.99)
+		Total number of consultations with members (3 digits)
+		Total fee for week (up to $99,999.99).  
+	3.2.	Manager Requests a Member report for any member who used a ChocAn Service that week. The report Includes
+		Member name (25 characters)
+		Member number (9 digits)
+		Member street address (25 characters)
+		Member city (14 characters)
+		Member state (2 letters)
+		Member ZIP code (5 digits)
+		For each service provided, the following details are required: 
+		Date of service (MM–DD–YYYY). 
+		Provider name (25 characters). 
+		Service name (20 characters).
+	3.3.	 The Manager Requests an EFT Report
+		All Electronic Funds Transfer data is recorded on a disk and which will be used to make sure the baking software credits providers correctly
+	3.4.	The Manager requests a Summary Report which includes each 
+		Each Provider Visited
+		Number of Visits for that provider, that week
+		Total fees for that provider for that week 
+		Total Number of Providers visited
+		Total number of Consultations
+		Total Fee amount
+

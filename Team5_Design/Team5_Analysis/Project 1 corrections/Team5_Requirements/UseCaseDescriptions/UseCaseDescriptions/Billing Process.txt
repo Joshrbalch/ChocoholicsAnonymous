@@ -1,0 +1,24 @@
+Use Case: Billing ChocAn 
+Context: After a health care service was provided to the member, the provider must bill ChocAn
+Actors: Provider
+Main Success Scenario:
+   1.	The provider passes the ChocAn Membership card through the terminal or keys in the member number
+   1.1.	The software validates the member and shows the word Validated on the Provider’s Terminal
+   2.	The Provider will then enter the date of the service in a MM-DD-YYYY format
+   3.	The Provider will then use the Provider Directory to look up the appropriate code for the service
+   3.1.	The name of the service attached to the code will then be displayed for the Provider to verify
+   3.2.	The Provider must then verify that it is the correct service
+   4.	The Provider may add in comments about the service if they would like
+   5.	The software then records the following information to a disk
+   Current date and time (MM–DD–YYYY HH:MM:SS). 
+   Date service was provided (MM–DD–YYYY). 
+   Provider number (9 digits). 
+   Member number (9 digits). 
+   Service code (6 digits). 
+   Comments (100 characters) (optional).
+   6.	 The software then displays the fee to be paid on the Provider’s terminal
+   7.	The Provider must enter the information above as well as well as the fee to be paid in a form for easier verification
+   8.	System Returns to Menu
+Extensions:
+   3.1a. The Provider entered the wrong code, repeat step 3
+   3.1b. The provider entered a nonexistent code, an error message will be printed

@@ -1,0 +1,21 @@
+Use Case: Interactive Mode
+Context: Operator intends to use interactive mode in ChocAn Data System
+Actors: Operator
+
+1 Operator opens ChocAn Data Center System
+2 Operator selects “Interactive Mode”
+3 Operator has options to select in Interactive Mode
+	3.1 Operator can update clients
+		3.1.1 Operator can add clients
+		3.1.2 Operator can delete clients
+	3.2 Operator can update records
+
+Extensions: 
+
+3.1.1.1		Operator can add providers 
+3.1.1.2.	Operator can add members
+3.1.2.1.	Operator can delete members
+3.1.2.2		Operator can delete providers
+
+3.2.1		Operator can update member records
+3.2.2		Operator can update provider records

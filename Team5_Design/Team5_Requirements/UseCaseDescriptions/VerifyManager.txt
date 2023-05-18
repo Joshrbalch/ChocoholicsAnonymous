@@ -1,0 +1,10 @@
+Use Case: Verify Manager
+Context: A Manager trying to log in to the ChocAn System
+Actors: Manager
+Main Success Scenario:
+    1.The Manager enters their username and password
+    2. System directs user to the Manager terminal
+    3. System returns to manager menu
+Extensions:
+    1.1.If they have an invalid username/password combination
+        1.1a. Repeat step one

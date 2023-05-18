@@ -1,0 +1,45 @@
+Use Case: Main Accounting Procedure
+Context: This is the procedure run on Friday’s at midnight that sends out reports
+Actors: Timer
+Main Success Scenario:
+	1.	Friday at Midnight timer goes off an Procedure beings execution
+	2.	Reads the week’s file of services and beings printing out reports
+	2.1.	For any member who consulted Chocoholics Anonymous receives a list of services provided to them, which also includes
+		Member name (25 characters)
+		Member number (9 digits)
+		Member street address (25 characters)
+		Member city (14 characters)
+		Member state (2 letters)
+		Member ZIP code (5 digits)
+		For each service provided, the following details are required: 
+		Date of service (MM–DD–YYYY). 
+		Provider name (25 characters). 
+		Service name (20 characters).
+	2.2.	For any provider who had billed ChocAn during that week, they receive a report containing all of the services provided to members. The reports include
+		Provider name (25 characters)
+		Provider number (9 digits)
+		Provider street address (25 characters)
+		Provider city (14 characters)
+		Provider state (2 letters)
+		Provider ZIP code (5 digits)
+		For each service provided, the following details are required: 
+		Date of service (MM–DD–YYYY)
+		Date and time data were received by the computer (MM–DD–YYYY HH:MM:SS)
+		Member name (25 characters)
+		Member number (9 digits)
+		Service code (6 digits)
+		Fee to be paid (up to $999.99)
+		Total number of consultations with members (3 digits)
+		Total fee for week (up to $99,999.99).  
+		2.3.	 A record consisting of Electronic Funds data is written on a disk 
+		2.4.	A summary report is given to the manager, this report lists 
+			Each Provider Visited
+			Number of Visits for that provider, that week
+			Total fees for that provider for that week 
+			Total Number of Providers visited
+			Total number of Consultations
+			Total Fee amount
+		3.	The procedure is now over and returns back to the system
+
+Extensions:
+	Not applicable

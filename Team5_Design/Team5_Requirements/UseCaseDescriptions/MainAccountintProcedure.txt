@@ -1,0 +1,16 @@
+Use Case: Main Accounting Procedure
+Context: The data center runs this procedure to send out reports weekly at midnight
+Actors: Clock
+Main Success Scenario:
+1.	The timer go off weekly on Fridays at midnight to execute the procedure. 
+2.	The system will then read the file of services provided for that week and prints reports
+3.  Each member who has consulted a ChocAn provider during that week receives a list of services, sorted in order of the service date
+3.1 The report, sent as an email, includes Member name (25 char), Member number (9 digits), Member address (25 char), Member city (14 char), Member state (2 char), Member zip code (5 digits)
+3.2 For each service provided the following details are included, date of service (MM-DD-YYYY), Provider name (25 char), Service name (20 char)
+4. Each provider who billed ChocAn receives a report in an email attachment for the list of services provided to members and a summary of the services provided.
+4.1 Verification is simplified by the report having the exact same information entered in the provider’s form. 
+4.2 The summary where the fields include, Provider name (25 char), Provider number (9 digits), Provider Street address (25 char), Provider city (14 char), provider state (2 letters) provider zip code ( 5 digits)
+4.3 the summary also includes the following details for each service provided. Date of service (MM-DD-YYYY), Date and time data were received by the computer (MM-DD-YYYY HH:MM:SS), member name (25 char), member number (digit), Service code (6 digits), Fees to be paid (up to $999.99), Total number of consultations with members (3 digits) and total fee for week (up to $99,999.99)
+
+Extensions:
+	No extensions were needed

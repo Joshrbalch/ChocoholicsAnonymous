@@ -1,0 +1,17 @@
+Use Case: Validating Member
+Context: When a member comes into a provider, they must be validated as a ChocAn member before receiving services
+Actors: Provider
+Main Success Scenario:
+    1.  Provider selects Member Validation on the provider menu on the terminal
+    2.  The system prompts the provider to slide the membership card through the terminal 
+    3.	Provider receives member’s membership card and slides it through the card reader on the terminal
+    4.	The system then connects with the ChocAn Data Center where they then check the member number
+        4.1 The data center returns the status of the member
+    5.	The Terminal then displays the status of the member
+    6.	The system returns to provider menu
+Extensions:
+    5a. If the member number is Valid, 
+        5a.1. the terminal will then display the word “Validated”
+    5b. If the number is not valid,
+        5b.1. The number is nonexistent, the system will display the words “Invalid Number”
+        5b.2. The member owes fees (for at least a month) and their status has been set to suspended, the system will display the words “Member Suspended”

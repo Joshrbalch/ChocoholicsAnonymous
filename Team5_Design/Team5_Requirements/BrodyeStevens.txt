@@ -1,0 +1,45 @@
+Use case: Member Management
+Context: A ChocAn operator uses this procedure to change Member records in the ChocAn Data Center 
+Actors: Operator
+Main Success Scenario: 
+1. ChocAn Operator accesses the ChocAn Data Center
+2. Operator selects Member record
+3. Operator changes record
+Extensions: 
+3a. Operator adds a new Member record
+3b. Operator updates a current Member record
+3c. Operator deletes a current Member record
+
+
+Use case: Provider Management
+Context: A ChocAn operator uses this procedure to change Provider records in the ChocAn Data Center 
+Actors: Operator
+Main Success Scenario: 
+1. ChocAn Operator accesses the ChocAn Data Center
+2. Operator selects Provider record
+3. Operator changes record
+Extensions: 
+3a. Operator adds a new Provider record
+3b. Operator updates a current Provider record
+3c. Operator deletes a current Provider record
+
+Use Case: Billing Procedure
+Context: A Provider uses this procedure to bill ChocAn for a service provided to a Member.
+Actors: Provider
+Main Success Scenario:
+1. Provider performs the Member Validation Use Case
+2. Provider enters the date of service in format (MM-DD-YYYY)
+3. Provider uses Provider Directory to look up the appropriate service code.
+4. Provider enters in service code
+5. ChocAn Software writes a record to disk, including the following: 
+   Current date and time (MM-DD-YYYY HH:MM:SS), 
+   Date service was provided (MM-DD-YYYY),
+   Provider number (9 digits)
+   Member number (9 digits)
+   Service code (6 digits)
+   Comments (100 characters) (optional)
+6. Software looks up and displays the fee to be paid for the service and displays it on the Provider's terminal
+7. Provider totals amount to be paid at end of week to verify ChocAn's total
+Extensions:
+4.a If Provider has entered a nonexistent code, an error message is displayed on their terminal
+4.b If code is accepted, Provider may also enter comments about the service provided

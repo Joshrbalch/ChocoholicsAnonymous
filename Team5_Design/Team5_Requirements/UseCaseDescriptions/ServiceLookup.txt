@@ -1,0 +1,44 @@
+Use Case: Billing Procedure  
+
+Context: Provider enters services rendered for billing purposes 
+
+Extends: Member Verification
+
+
+
+Actors: Provider
+
+1. Membership is verified 
+
+2. Service date entered into system 
+
+3. Service code is looked up 
+
+	3.1. Service code is entered 
+
+	3.2. Service is displayed and verification requested 
+
+4. Software records info on disk 
+
+	4.1. Date of info entered 
+	
+	4.2.  Date of service provided 
+	
+	4.3. Provider number entered 
+	
+	4.4. Member number entered 
+	
+	4.5. Service code entered 
+
+5. Fee is displayed
+	
+	
+
+Extensions: 
+
+1a. Card is swiped 
+1b. Member number is entered manually
+
+3a. Invalid code is entered and error message appears 
+
+4.6a. Optional comments added by provider

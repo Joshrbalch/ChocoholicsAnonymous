@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author aubie
+ *
+ */
+module chocaholicsAnonymous {
+}

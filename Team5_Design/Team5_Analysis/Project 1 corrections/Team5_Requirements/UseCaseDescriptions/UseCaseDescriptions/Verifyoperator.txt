@@ -1,0 +1,10 @@
+Use Case: Verify Operator
+Context: A Operator trying to log in to the ChocAn System
+Actors: Operator
+Main Success Scenario:
+    1.The Operator enters their username and password
+    2. System directs user to the operator terminal
+    3. System returns to operator menu
+Extensions:
+    1.1.	If they have an invalid username/password combination
+        1.1a. Repeat step one

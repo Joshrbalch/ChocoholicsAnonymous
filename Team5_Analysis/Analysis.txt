@@ -1,0 +1,10 @@
+
+As the leading chocolate rehab organization, Chocoholics Anonymous needs to keep up with 
+constant technological advances, the organization will computerize sections of its operations
+to make it more efficient. The computerized sections include member records, financial transactions, 
+and scheduling. The data will be stored in a secure database to ensure its safety and accessibility.
+To support the computerization, the organization will require a desktop or laptop computer,
+internet connection, and printer. The system will interact with other systems
+such as insurance providers, medical professionals, and billing systems.
+Users, including members and employees, will interact with the system through a user-friendly
+interface that allows for easy access to information and communications.

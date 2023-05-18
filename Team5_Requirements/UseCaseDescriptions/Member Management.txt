@@ -1,0 +1,11 @@
+Use Case: Manage Member Information
+Context: This will allow the operator to change information about members in the system
+Actors: Operator
+Main Success Scenario:
+	1.	ChocAn Data Center is in interactive mode
+	2.	Operator changes information about members
+	3.	ChocAn Data Center returns into the interactive mode
+Extensions:
+	2.1. Operator adds a new member
+	2.2. Operator deletes a member who has resigned
+	2.3. Operator updates member records
